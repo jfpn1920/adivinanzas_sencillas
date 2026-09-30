@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivinanzas sencillas</title>
+    <link rel="stylesheet" href="adivinanzas_sencillas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="adivinanzas_sencillas.js" defer></script>
+</head>
+<body>
+    <!------------------------------------------>
+    <!--|estructuracion_adivinanzas_sencillas|-->
+    <!------------------------------------------>
+    <header class="encabezado">
+        <div class="icono_juego">
+            <i class="fa-solid fa-puzzle-piece"></i>
+        </div>
+        <div class="informacion_encabezado">
+            <h1>Adivinanzas Sencillas</h1>
+            <p>Pon a prueba tu imaginación y descubre la respuesta.</p>
+        </div>
+    </header>
+    <!------------------------->
+    <!--|contenido_principal|-->
+    <!------------------------->
+    <main class="contenedor">
+        <section class="marcador">
+            <div class="dato_marcador">
+                <i class="fa-solid fa-star"></i>
+                <span>Aciertos</span>
+                <strong id="contadorAciertos">0</strong>
+            </div>
+            <div class="dato_marcador">
+                <i class="fa-solid fa-list"></i>
+                <span>Adivinanza</span>
+                <strong id="numeroAdivinanza">1</strong>
+            </div>
+        </section>
+        <!---------------->
+        <!--|adivinanza|-->
+        <!---------------->
+        <section class="zona_adivinanza">
+            <div class="etiqueta">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>ADIVINANZA</span>
+            </div>
+            <div class="pregunta">
+                <p id="textoAdivinanza">Tengo agujas y no sé coser, tengo números y no sé leer. ¿Qué soy?</p>
+            </div>
+            <div class="zona_respuesta">
+                <label for="campoRespuesta">Escribe tu respuesta:</label>
+                <div class="campo_con_icono">
+                    <i class="fa-solid fa-pen"></i>
+                    <input type="text" id="campoRespuesta" placeholder="Escribe aquí tu respuesta..." autocomplete="off">
+                </div>
+                <button id="botonComprobar" class="boton comprobar"><i class="fa-solid fa-circle-check"></i>Comprobar respuesta</button>
+            </div>
+            <div id="resultado" class="resultado">
+                <i class="fa-solid fa-question"></i>
+                <span>Escribe una respuesta para comenzar.</span>
+            </div>
+        </section>
+        <!---------------------->
+        <!--|nueva_adivinanza|-->
+        <!---------------------->
+        <section class="zona_nueva">
+            <p>¿Quieres intentar otra adivinanza?</p>
+            <button id="botonNueva" class="boton nueva"><i class="fa-solid fa-shuffle"></i>Nueva adivinanza</button>
+        </section>
+        <!----------------->
+        <!--|restablecer|-->
+        <!----------------->
+        <section class="zona_restablecer">
+            <button id="botonRestablecer" class="boton eliminar"><i class="fa-solid fa-rotate-left"></i>Restablecer puntuación</button>
+        </section>
+    </main>
+</body>
+</html>

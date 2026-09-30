@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #e9edf5;
+    color: #252b3a;
+}
+/*----------------------------------*/
+/*--|estilo_adivinanzas_sencillas|--*/
+/*----------------------------------*/
+.encabezado {
+    min-height: 155px;
+    padding: 30px;
+    background: #283593;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.icono_juego {
+    width: 75px;
+    height: 75px;
+    background: #ffca28;
+    color: #283593;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+}
+.informacion_encabezado h1 {
+    font-size: 31px;
+    margin-bottom: 8px;
+}
+.informacion_encabezado p {
+    color: #dce0ff;
+}
+/*--------------------------------*/
+/*--|estilo_contenido_principal|--*/
+/*--------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: 35px auto;
+}
+.marcador {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.dato_marcador {
+    flex: 1;
+    background: white;
+    border: 1px solid #d6dbea;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dato_marcador i {
+    color: #ffb300;
+}
+.dato_marcador span {
+    font-size: 14px;
+}
+.dato_marcador strong {
+    margin-left: auto;
+    font-size: 20px;
+}
+/*-----------------------*/
+/*--|estilo_adivinanza|--*/
+/*-----------------------*/
+.zona_adivinanza {
+    background: white;
+    border-radius: 14px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(40, 53, 147, 0.10);
+}
+.etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e8eaf6;
+    color: #283593;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.pregunta {
+    margin: 30px 0;
+    padding: 35px 25px;
+    background: #f5f6ff;
+    border-left: 5px solid #3f51b5;
+    text-align: center;
+}
+.pregunta p {
+    font-size: 22px;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+.zona_respuesta label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.campo_con_icono {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d6dbea;
+    border-radius: 7px;
+    background: white;
+    padding: 0 15px;
+}
+.campo_con_icono:focus-within {
+    border-color: #3f51b5;
+}
+.campo_con_icono i {
+    color: #68708a;
+}
+.campo_con_icono input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #252b3a;
+}
+.boton {
+    border: none;
+    border-radius: 7px;
+    padding: 13px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.comprobar {
+    width: 100%;
+    margin-top: 15px;
+    background: #3f51b5;
+    color: white;
+}
+.comprobar:hover {
+    background: #303f9f;
+}
+.resultado {
+    min-height: 55px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    background: #f1f3f8;
+    color: #5d6475;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.resultado.correcto {
+    background: #e4f5e9;
+    color: #24743b;
+}
+.resultado.incorrecto {
+    background: #fde9e7;
+    color: #a33b32;
+}
+/*-----------------------------*/
+/*--|estilo_nueva_adivinanza|--*/
+/*-----------------------------*/
+.zona_nueva {
+    margin-top: 25px;
+    text-align: center;
+}
+.zona_nueva p {
+    color: #697184;
+    margin-bottom: 12px;
+}
+.nueva {
+    background: #ffca28;
+    color: #3e3200;
+}
+.nueva:hover {
+    background: #f4b900;
+}
+/*------------------------*/
+/*--|estilo_restablecer|--*/
+/*------------------------*/
+.zona_restablecer {
+    text-align: center;
+    margin-top: 20px;
+}
+.eliminar {
+    background: #d65c50;
+    color: white;
+}
+.eliminar:hover {
+    background: #b94a40;
+}
